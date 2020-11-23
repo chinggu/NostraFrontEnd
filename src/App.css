@@ -28,6 +28,30 @@
   color: #61dafb;
 }
 
+.mov-card {
+  position: relative;
+  min-height: 500px;
+}
+
+.movinside {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #282c34;
+  transition: all ease-in-out 0.1s;
+}
+
+.mov-card:hover .movinside {
+  opacity: 0.7;
+}
+
+.movinside p {
+  color: #fff;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
